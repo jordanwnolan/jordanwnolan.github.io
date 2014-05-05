@@ -62,7 +62,11 @@
 
       if (this.asteroids[i].isCollidedWith(this.ship)){
         alert('Game Over!');
-        window.location.reload();
+        if (confirm('Do you want to play again?')) {
+          window.location.reload();
+        } else {
+          window.location.replace("index.html");
+        }
       };
     };
   };
