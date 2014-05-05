@@ -59,10 +59,10 @@
 
   Game.prototype.checkCollisions = function(stepInterval) {
     for (var i = 0; i < this.asteroids.length; i++) {
-      // console.log("this.asteroids[i].pos: " + this.asteroids[i].pos);
-      // console.log("this.ship.pos: " + this.ship.pos);
+
       if (this.asteroids[i].isCollidedWith(this.ship)){
-        if( !alert('Game Over!') ){window.location.reload();}
+        alert('Game Over!');
+        window.location.reload();
       };
     };
   };
