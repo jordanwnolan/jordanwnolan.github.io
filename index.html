@@ -1,1 +1,50 @@
-Hello World!
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-type">
+  <title>Asteroids</title>
+
+  <style type="text/css">
+
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    html, body, canvas {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      font: inherit;
+      background-color: black;
+    }
+
+    canvas {
+      position:absolute; top:0; bottom:0; left:0; right:0;
+      display: block;
+      margin: auto;
+      border: 5px solid white;
+    }
+
+  </style>
+
+  <script type="text/javascript" src="inherit.js"></script>
+  <script type="text/javascript" src="keymaster.js"></script>
+  <script type="text/javascript" src="movingObject.js"></script>
+  <script type="text/javascript" src="asteroid.js"></script>
+  <script type="text/javascript" src="bullet.js"></script>
+  <script type="text/javascript" src="ship.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+</head>
+
+<body>
+  <noscript>
+    Use JavaScript, you fool!
+  </noscript>
+
+  <canvas id="asteroidCanvas" width="800" height="800"></canvas>
+
+  <script type="text/javascript">
+    var canv = document.getElementById("asteroidCanvas");
+    new Asteroids.Game(canv.getContext("2d")).start(15);
+  </script>
+</body>
