@@ -42,8 +42,14 @@
   };
 
   Game.prototype.step = function(){
-    if (this.asteroids.length === 0){
-      if( !alert('You Win!') ){window.location.reload();}
+    if (this.asteroids.length === 0) {
+      alert('You Win!')
+      if ( confirm("Do you want to play again?")){
+        window.location.reload();
+      } else {
+        window.location("index.html")
+      }
+
     };
 
     this.move();
