@@ -44,12 +44,11 @@
   Game.prototype.step = function(){
     if (this.asteroids.length === 0) {
       alert('You Win!')
-      if ( confirm("Do you want to play again?")){
-        window.location.reload();
-      } else {
-        window.location("index.html")
+      window.location.reload();
+      if ( !confirm('Do you want to play again?')) {
+        window.location.replace("index.html");
       }
-
+      
     };
 
     this.move();
@@ -71,7 +70,7 @@
         window.location.reload();
         if ( !confirm('Do you want to play again?')) {
           window.location.replace("index.html");
-        };
+        }
       };
     };
   };
