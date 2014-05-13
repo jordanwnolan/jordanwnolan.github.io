@@ -45,9 +45,7 @@
     if (this.asteroids.length === 0) {
       alert('You Win!')
       window.location.reload();
-      if ( !confirm('Do you want to play again?')) {
-        window.location.replace("index.html");
-      }
+z
       
     };
 

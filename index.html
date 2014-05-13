@@ -151,6 +151,41 @@
 								</div>
 							</div>
 
+
+							<header class="after-project">
+								<h3><a href="http://chess-sensei.herokuapp.com/">Chess-Sensei</a></h3>
+							</header>
+							<p>Chess Sensei is a chess game with the game logic written in Ruby.  I used rails to allow the game to be played in the browser.  Uses jQuery-UI for draggable/droppable.  When a user makes a move, an AJAX request is sent to the server to try and make the move.  If the move succeeds the board state will be saved, otherwise it won't be saved and a message will tell the user that it is an invalid move.  I added Pusher so updates happen in realtime with your opponent.</p>
+
+							<div class="row">
+								<div class="4u">
+									<article class="item">
+										<a href="https://github.com/jordanwnolan/ChessMaster/blob/master/app/views/games/show.html.erb" class="image full"><img src="images/pusher.png" alt="" /></a>
+										<header>
+											<h3>Pusher allows for realtime updates</h3>
+										</header>
+									</article>
+
+								</div>
+								<div class="4u">
+									<article class="item">
+										<a href="https://github.com/jordanwnolan/ChessMaster/blob/master/app/views/games/_board.html.erb" class="image full"><img src="images/board.png" alt="" /></a>
+										<header>
+											<h3>Chess board built with HTML and CSS</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="item">
+										<a href="https://github.com/jordanwnolan/ChessMaster/blob/master/lib/assets/chess/piece.rb" class="image full"><img src="images/piece.png" alt="" /></a>
+										<header>
+											<h3>Base piece class</h3>
+										</header>
+									</article>
+
+								</div>
+							</div>
+
 							<header class="after-project">
 								<h3><a href="asteroids.html">Asteroids.js</a></h3>
 							</header>
