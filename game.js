@@ -45,7 +45,6 @@
     if (this.asteroids.length === 0) {
       alert('You Win!')
       window.location.reload();
-z
       
     };
 
